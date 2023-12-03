@@ -2,15 +2,19 @@
 \usepackage{amsmath}
 \usepackage{tfrupee}
 \usepackage{geometry}
-\geometry{margin = 2.5cm}
+\newcommand{\myvec}[1]{\begin{bmatrix}#1\end{bmatrix}}
+\newcommand{\mydet}[1]{\begin{vmatrix}#1\end{vmatrix}}
 \begin{document}
 \begin{enumerate}
-    \item Find whether the following pair of linear equations are consistent or inconsistent:\\
-    \hspace*{2cm} $5x - 3y = 11, -10x + 6y = 22$.
-    
-    \item Solve for x and y:\\
-    \hspace*{2cm} $x + y = 6, 2x - 3y = 4$.\\
-    \item Find out wheather the pair of equations $2x + 3y = 0$ and $2x - 3y = 26$ is consistent or inconsistent.
+    \item Find whether the following pair of linear equations are consistent or inconsistent:
+    \begin{align*}
+     5x - 3y = 11, -10x + 6y = 22.
+    \end{align*}
+    \item Solve for $x$ and $y$:
+    \begin{align*}
+    x + y = 6, 2x - 3y = 4.
+    \end{align*}
+    \item Find out whether the pair of equations $2x + 3y = 0$ and $2x - 3y = 26$ is consistent or inconsistent.
     
     \item For what values of $k$, does the pair of linear equations $kx - 2y = 3$ and $3x + y = 5$ have a unique solution?
     
@@ -20,39 +24,22 @@
     
     \item Find the value of $k$ for which the system of equations $x + 2y = 5$ and $3x + ky + 15 = 0$ has no solution.
     
-    \item If $2$ tables and $2$ chairs cost $\rupee~700$ and $4$ tables and $3$ chairs cost $\rupee~1,250$, then find the cost of one table.
+    \item If $2$ tables and $2$ chairs cost \rupee~700 and $4$ tables and $3$ chairs cost \rupee~1,250, then find the cost of one table.
     
     \item If the graph of a pair of lines $x - 2y + 3 = 0$ and $2x - 4y = 5$ be drawn, then what type of lines are drawn?
-    
+
+    \item $\myvec{1 2\\ 3 4}$
     \item 
-    If $A = \begin{bmatrix}
-        1 & -1\\
-        -1 & 1
-    \end{bmatrix}$, then $A^2$ equals\\
+    If $A = \myvec{1 & -1 \\ -1 & 1}$, then $A^2$ equals\\
     \begin{enumerate}
-        \item $\begin{bmatrix}
-            2 &-2\\
-            -2 & 2
-        \end{bmatrix}$
-        \item $\begin{bmatrix}
-            2 & -2\\
-            -2 & 2
-        \end{bmatrix}$
-        \item $\begin{bmatrix}
-            -2 & -2\\
-            -2 & 2
-        \end{bmatrix}$
-        \item $\begin{bmatrix}
-            -2 & 2\\
-            2 & -2
-        \end{bmatrix}$
+        \item $\myvec{2 & -2 \\ -2 & 2}$
+        \item $\myvec{2 & -2 \\ -2 & -2}$
+        \item $\myvec{-2 & -2 \\ -2 & 2}$
+        \item $\myvec{-2 & 2 \\ 2 & -2}$
     \end{enumerate}
 
-    \item $\begin{vmatrix}
-        43 & 44 & 45\\
-        44 & 45 & 46\\
-        45 & 46 &47
-    \end{vmatrix}$ equals\\
+   \item
+    $\mydet{43 & 44 & 45 \\ 44 & 45 & 46 \\ 45 & 46 & 47}$
     \begin{enumerate}
         \item $0$
         \item $-1$
@@ -60,97 +47,48 @@
         \item $2$
     \end{enumerate}
 
-    \item $A$ square matrix $A$ is said to be singular if \rule{2cm}{0.15mm}.
+    \item A square matrix $A$ is said to be singular if $\rule{2cm}{0.15mm}$.
 
-    If $A = \begin{bmatrix}
-        3 & -5\\
-        2 & 0
-    \end{bmatrix}$ and 
-    $B = \begin{bmatrix}
-        1 & 17\\
-        0 & -10
-    \end{bmatrix}$, then $|AB|$ = \rule{2cm}{0.15mm}.
+    If $A =\myvec{3 & -5 \\ 2 & 0}$ and 
+    $B = \myvec{1 & 17 \\ 0 & -10}$, then $\mydet{AB} = \rule{2cm}{0.15mm}$.
 
-    \item If $\begin{bmatrix}
-        4 & x+2\\
-        2x-3 & x+1
-    \end{bmatrix}$ is a symmetric matrix, then find the value of $x$.
+    \item If $\myvec{4 & x+2 \\ 2x-3 & x+1}$ is a symmetric matrix, then find the value of $x$.
 
     If $A$ is a square matrix such that $A^2 = A$, then find $(2+A)^3 - 19A$.
 
-    \item For matrix $A$ = $\begin{bmatrix}
-        2 & 3\\
-        -4 & -6
-    \end{bmatrix}$, verify the following:
-    \hspace*{2cm} $A(adj A) = (adj A)A = |A|I$
+    \item For matrix $A = \myvec{2 & 3 \\ -4 & -6}$, verify the following:
+    $A(adj A) = (adj A)A = |A|I$
 
-    \item Using properties of determinants show that\\\\
-    $\begin{vmatrix}
-        $$1 +a^2 - b^2 & 2ab & -2b\\\\
-        2ab & 1 - a^2 + b & 2a\\\\
-        2b & -2a & 1 - a^2 - b^2$$\\
-    \end{vmatrix} = (1 + a^2 + b^2)^3$
+    \item Using properties of determinants show that
+    $\mydet{1 + a^2 - b^2 & 2ab & -2b \\ 2ab & 1 - a^2 & 2a \\ 2b & -2a & 1 - a^2 - b^2 } = (1 + a^2 + b^2)^3$
 
-    \item Find the equation of the line joining $A(1, 3)$ and $B(0, 0)$, using determinants. Also, find $k$ if $D(k, 0)$ is a point such that the area of $\triangle ABD$ is $3$ square units.
+    \item Find the equation of the line joining $A(1, 3)$ and $B(0, 0)$, using determinants. Also, find $k$ if $D(k, 0)$ is a point such that the area of $\triangle{ABD}$ is $3$ square units.
     
-    \item Solve the system of linear equations, using the matrix method:\\
-    $7x + 2y = 11$\\
-    $4x - 7 = 2$
+    \item Solve the system of linear equations, using the matrix method:
+    \begin{align*}
+        7x + 2y = 11
+        4x - 7 = 2
+    \end{align*}
     
-    \item Find the Value of $x$, if\\
-    $\begin{bmatrix}
-        $x$ & 1
-    \end{bmatrix}$ $\begin{bmatrix}
-        1 & 0 \\
-        -2 & -1
-    \end{bmatrix}$ $\begin{bmatrix}
-        $x$\\
-        3
-    \end{bmatrix}$ = 0
+    \item Find the Value of $x$, if
+    $\myvec{x & 1}
+    \myvec{1 & 0 \\ -2 & -1}
+    \myvec{x \\ 3} = 0$
     
-    \item If A = $\begin{bmatrix}
-        0 & 1\\
-        1 & 0
-    \end{bmatrix}$, then $A^4$ = \rule{2cm}{0.15mm}.
+    \item If $A = \myvec{0 & 1 \\ 1 & 0}$, then $A^4 = \rule{2cm}{0.15mm}$.
 
-    \item Given A = $\begin{bmatrix}
-        1 & -1 & 1\\
-        3 & -2 & 1\\
-        -2 & 1 & 0
-    \end{bmatrix}$ and
-    B = $\begin{bmatrix}
-        1 & 2\\
-        2 & 4\\
-        1 & -2
-    \end{bmatrix}$, the order of the matrix $AB$ is \rule{2cm}{0.15mm}.
+    \item Given $A = \myvec{1 -1 & 1 \\ 3 & -2 & 1 \\ -2 & 1 & 0}$ and
+    $B = \myvec{1 & 2 \\ 2 & 4 \\ 1 & -2}$, the order of the matrix $AB$ is $\rule{2cm}{0.15mm}$.
     
-    \item if $A$ = $\begin{bmatrix}
-        0 & -i\\
-        i & 0
-    \end{bmatrix}$ $(i^2 = -1)$ and  B = $\begin{bmatrix}
-        1 & 0\\
-        0 & -1
-    \end{bmatrix}$, then $AB$ is equal to
+    \item if $A = \myvec{0 & -i \\ i & 0} (i^2 = -1)$ and  $B = \myvec{1 & 0 \\ 0 & -1}$, then $AB$ is equal to
     \begin{enumerate}
-        \item $\begin{bmatrix}
-            0 & i\\
-            i & 0
-        \end{bmatrix}$
-        \item $\begin{bmatrix}
-            i & 0\\
-            0 & -i
-        \end{bmatrix}$
-        \item $\begin{bmatrix}
-            i & -i\\
-            0 & 1
-        \end{bmatrix}$
-        \item $\begin{bmatrix}
-            0 & 0\\
-            i & 0
-        \end{bmatrix}$
+        \item $\myvec{0 & i \\ i & 0}$
+        \item $\myvec{i & 0 \\ 0 & -i}$
+        \item $\myvec{i & -i \\ 0 & 1}$
+        \item $\myvec{0 & 0 \\ i & 0}$
     \end{enumerate}
    
-   \item If $A$ is a $5 \times p$ matrix, $B$ is a $2 \times q$ matrix, then the order of the matrix $AB$ is $5 \times 4$. What are the values of $p and q$?
+   \item If $A$ is a $5 \times p$ matrix, $B$ is a $2 \times q$ matrix, then the order of the matrix $AB$ is $5 \times 4$. What are the values of $p$ and $q$?
    \begin{enumerate}
        \item $p = 2, q = 4$
        \item $p = 4, q = 2$
@@ -158,39 +96,23 @@
        \item $p = 4, q = 4$
    \end{enumerate}
 
-   \item Value of $k$, for which $A$ = $\begin{bmatrix}
-        k & 8\\
-        1 & 2k
-        \end{bmatrix}$ is a singular matrix is:
+   \item Value of $k$, for which $A =\myvec{k & 8 \\ 1 & 2k}$ is a singular matrix is:
     \begin{enumerate}
         \item $4$
         \item $-4$
-        \item $\pm 4$
+        \item $\pm4$
         \item $0$
     \end{enumerate}
         
 
-    \item If $A = [a_{i}{j}]$ is a square matrix of order $2$ such that $a_{i}= \begin{cases}1, when i + j\\
-    0, when i-j
+    \item If $A = [a_{i}{j}]$ is a square matrix of order $2$ such that $a_{i} = \begin{cases}1, \text{when} $i + j$\\0, \text{when} ~i-j
     \end{cases}$, then $A^2$ is:
-    
+
     \begin{enumerate}
-        \item $\begin{bmatrix}
-            1 & 0\\
-            1 & 0
-        \end{bmatrix}$
-        \item $\begin{bmatrix}
-            1 & 1\\
-            0 & 0
-        \end{bmatrix}$
-        \item $\begin{bmatrix}
-            1 & 1\\
-            1 & 0
-        \end{bmatrix}$
-        \item $\begin{bmatrix}
-            1 & 0\\
-            0 & 1
-        \end{bmatrix}$
+        \item $\myvec{1 & 0 \\ 1 & 0}$
+        \item $\myvec{1 & 1 \\ 0 & 0}$
+        \item $\myvec{1 & 1 \\ 1 & 0}$
+        \item $\myvec{1 & 0 \\ 0 & 1}$
     \end{enumerate}
 
     \item Given that $A$ is a square matrix of order $3$ and $|A| = -4$, then $| adj A |$ is equal to:
@@ -202,16 +124,9 @@
     \end{enumerate}
     
     \item If
-    $\begin{bmatrix}
-      2a+b & a-2b \\
-      5c-d & 4c+3d
-    \end{bmatrix}$
+    $\myvec{2a+b & a-2b \\ 5c-d & 4c+3d}$
     =
-    $\begin{bmatrix}
-      4 & -3 \\
-      11 & 24
-    \end{bmatrix}$,
-    then the value of $a + b - c + 2d$ is:
+    $\myvec{4 & -3 \\ 11 & 24}$, then the value of $a + b - c + 2d$ is:
     \begin{enumerate}
         \item  $8$
         \item $10$
@@ -227,44 +142,25 @@
         \item $ 5 \times 5$
     \end{enumerate}
 
-    \item For matrix $A =$
-    $\begin{bmatrix}
-      2 & 5 \\
-      -11 & 7
-    \end{bmatrix}$,
-    $(\text{adj}A)'$ is equal to:
+    \item For matrix $A = \myvec{2 & 5 \\ -11 & 7}, (\text{adj}A)'$ is equal to:
     \begin{enumerate}
-        \item $\begin{bmatrix}
-        -2 & -5 \\ 11 & -7
-        \end{bmatrix}$
-        \item $\begin{bmatrix}
-        7 & 5 \\ 11 & 2
-        \end{bmatrix}$
-        \item $\begin{bmatrix}
-        7 & 11 \\ -5 & 2
-        \end{bmatrix}$
-        \item $\begin{bmatrix}
-        7 & -5 \\ 11 & 2
-        \end{bmatrix}$
+        \item $\myvec{-2 & -5 \\ 11 & -7}$
+        \item $\myvec{7 & 5 \\ 11 & 2}$
+        \item $\myvec{7 & 11 \\ -5 & 2}$
+        \item $\myvec{7 & -5 \\ 11 & 2}$
     \end{enumerate}
 
-    \item Given that $A = [a_{ij}]$ is a square matrix of order $3 \times 3$ and $|A| = -7$, then the value of  $\sum_{i=1}^{3} a_{i2}A_{i2} $ ,where $A_{ij}$ denotes the cofactor of element $a_{ij}$ is:
+    \item Given that $A = [a_{ij}]$ is a square matrix of order $3 \times 3$ and $|A| = -7$, then the value of  $\sum_{i=1}^{3} a_{i2}A_{i2}$ ,where $A_{ij}$ denotes the co-factor of element $a_{ij}$ is:
+
     \begin{enumerate}
-        \item $7$
-        \item $-7$
-        \item $0$
-        \item $49$
+        \item $\myvec{1 & 0 \\ 1 & 0}$
+        \item $ \myvec{1 & 1 \\ 0 & 0}$
+        \item $\myvec{1 & 1 \\ 1 & 0}$
+        \item $\myvec{1 & 0 \\ 0 & 1}$
     \end{enumerate}
+
     
-    \item If $A = \begin{bmatrix}
-        1 & -1 & 0 \\
-        2 & 3 & 4 \\
-        0 & 1 & 2
-    \end{bmatrix}$ and $B = \begin{bmatrix}
-        2 & 2 & -4 \\ 
-        -4 & 2 &-4 \\
-        2 & -1 & 5 \\
-    \end{bmatrix}$, then
+    \item If $A =\myvec{1 &-1 & 0 \\2&3 & 4 \\0&1&2}$ and $B = \myvec{2&2&-4\\-4&2&-4\\2&-1&5}$, then
     \begin{enumerate}
         \item $A^{-1} = B$
         \item $A^{-1} = 6B$
@@ -279,21 +175,15 @@
         \item $16$
     \end{enumerate}
     
-    \item If $A = \begin{bmatrix}
-      0 & 2\\ 
-      3 & -4 
-    \end{bmatrix}$ and $kA = \begin{bmatrix}
-      0 & 3a \\
-      2b & 24 
-    \end{bmatrix}$, then the values of $k$,$a$ and $b$ respectively are
+    \item If $A =\myvec{0&2\\3&-4}$ and $kA =\myvec{0&3a\\2b&24}$, then the values of $k ,a$ and $b$ respectively are:
     \begin{enumerate}
         \item $-6, -12, -18$
         \item $-6, -4, -9$
         \item $-6, 4, 9$
-        \item $-6, 12, 18$ 
+        \item $-6, 12, 18$
     \end{enumerate}
     
-    \item If $A$ is square matrix such that $A^2 = A$, then $(I + A)^3  -7A$ is equal to:
+    \item If $A$ is square matrix such that $A^2 = A$, then $(I + A)^3 - 7A$ is equal to:
     \begin{enumerate}
         \item $A$
         \item $I + A$
@@ -301,52 +191,29 @@
         \item $I$ 
     \end{enumerate}
     
-    \item For $A = \begin{bmatrix}
-        3 & 1\\
-        -1 & 2
-    \end{bmatrix}$, then $14^{{-}1}$ is given by:
+    \item For $A =
+        \myvec{3 & 1 \\ -1 & 2}$, then $14^{-1}$ is given by:
     \begin{enumerate}
-        \item $14 \begin{bmatrix}
-            2 & -1\\
-            1 & 3
-        \end{bmatrix}$
-        \item $\begin{bmatrix}
-            4 & -2\\
-            2 & 6
-        \end{bmatrix}$
-        \item $2 \begin{bmatrix}
-            2 & -1\\
-            1 & -3
-        \end{bmatrix}$
-        \item $2 \begin{bmatrix}
-            -3 & -1\\
-            1 & -2
-        \end{bmatrix}$
+        \item $14 \myvec{2 & -1 \\ 1 & 3}$
+        \item $\myvec{4 & -2 \\ 2 & 6}$
+        \item $2\myvec{2 & -1 \\ 1 & -3}$
+        \item $2\myvec{-3 & -1 \\ 1 & -2 }$
     \end{enumerate}
     
-    \item Given that $A = \begin{bmatrix}
-        \alpha & \beta\\
-        \gamma & -\alpha
-    \end{bmatrix}$ and $A^2 = 3I$, then:
+    \item Given that $A = 
+        \myvec{\alpha & \beta \\ \gamma & -\alpha}$ and $A^2 = 3I$, then:
     \begin{enumerate}
         \item $1 + \alpha^2 + \beta\gamma = 0$
         \item $1 - \alpha^2 - \beta\gamma = 0$
         \item $3 - \alpha^2 - \beta\gamma = 0$
         \item $3 + \alpha^2 + \beta\gamma = 0$
     \end{enumerate}
-
-    \item Let $A = \begin{bmatrix}
-        1 & sin\alpha & 1\\
-        -sin\alpha & 1 & sin\alpha\\
-        -1 & -sin\alpha & 1
-    \end{bmatrix}$, where $0 \leq \alpha \leq 2\pi$, then:
-    \\
+    \item Let $A = \myvec{1 & \sin\alpha & 1 \\ -\sin\alpha & 1 & \sin\alpha \\ -1 & -\sin\alpha & 1}$, where $0\leq \alpha \leq 2\pi$, then:
     \begin{enumerate}
         \item $|A|=0$
         \item $|A| \varepsilon (2,\infty)$
-        \item $|A| \varepsilon (2,4)$
+        \item $\mydet{A} \varepsilon (2,4)$
         \item $|A| \varepsilon |2,4|$
     \end{enumerate}
-    
 \end{enumerate}
 \end{document}
