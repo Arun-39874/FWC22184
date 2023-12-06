@@ -2,8 +2,8 @@
 \usepackage{amsmath}
 \usepackage{tfrupee}
 \usepackage{geometry}
-\newcommand{\myvec}[1]{\begin{bmatrix}#1\end{bmatrix}}
-\newcommand{\mydet}[1]{\begin{vmatrix}#1\end{vmatrix}}
+\providecommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\myvec}[1]{\ensuremath{\begin{bmatrix}#1\end{bmatrix}}}
 \begin{document}
 \begin{enumerate}
     \item Find whether the following pair of linear equations are consistent or inconsistent:
@@ -24,13 +24,12 @@
     
     \item Find the value of $k$ for which the system of equations $x + 2y = 5$ and $3x + ky + 15 = 0$ has no solution.
     
-    \item If $2$ tables and $2$ chairs cost \rupee~700 and $4$ tables and $3$ chairs cost \rupee~1,250, then find the cost of one table.
+    \item If $2$ tables and $2$ chairs cost \rupee$700$ and $4$ tables and $3$ chairs cost \rupee$1,250$, then find the cost of one table.
     
     \item If the graph of a pair of lines $x - 2y + 3 = 0$ and $2x - 4y = 5$ be drawn, then what type of lines are drawn?
 
-    \item $\myvec{1 2\\ 3 4}$
-    \item 
-    If $A = \myvec{1 & -1 \\ -1 & 1}$, then $A^2$ equals\\
+
+    \item If $A = \myvec{1 & -1 \\ -1 & 1}$, then $A^2$ equals
     \begin{enumerate}
         \item $\myvec{2 & -2 \\ -2 & 2}$
         \item $\myvec{2 & -2 \\ -2 & -2}$
@@ -60,9 +59,11 @@
     $A(adj A) = (adj A)A = |A|I$
 
     \item Using properties of determinants show that
-    $\mydet{1 + a^2 - b^2 & 2ab & -2b \\ 2ab & 1 - a^2 & 2a \\ 2b & -2a & 1 - a^2 - b^2 } = (1 + a^2 + b^2)^3$
+    \begin{align*}
+        \mydet{1 + a^2 - b^2 & 2ab & -2b \\ 2ab & 1 - a^2 & 2a \\ 2b & -2a & 1 - a^2 - b^2 } = (1 + a^2 + b^2)^3
+    \end{align*}
 
-    \item Find the equation of the line joining $A(1, 3)$ and $B(0, 0)$, using determinants. Also, find $k$ if $D(k, 0)$ is a point such that the area of $\triangle{ABD}$ is $3$ square units.
+    \item Find the equation of the line joining $A(1, 3)$ and $B(0, 0)$, using determinants. Also, find $k$ if $D(k, 0)$ is a point such that the area of $\Delta{ABD}$ is $3$ square units.
     
     \item Solve the system of linear equations, using the matrix method:
     \begin{align*}
@@ -105,8 +106,12 @@
     \end{enumerate}
         
 
-    \item If $A = [a_{i}{j}]$ is a square matrix of order $2$ such that $a_{i} = \begin{cases}1, \text{when} $i + j$\\0, \text{when} ~i-j
-    \end{cases}$, then $A^2$ is:
+    \item If $A = [a_{i}{j}]$ is a square matrix of order $2$ such that 
+    \begin{align}
+        a_{i} = \begin{cases}1, $i + j$\\0, i-j
+    \end{cases}
+    \end{align}
+     ,then $A^2$ is:
 
     \begin{enumerate}
         \item $\myvec{1 & 0 \\ 1 & 0}$
@@ -124,9 +129,7 @@
     \end{enumerate}
     
     \item If
-    $\myvec{2a+b & a-2b \\ 5c-d & 4c+3d}$
-    =
-    $\myvec{4 & -3 \\ 11 & 24}$, then the value of $a + b - c + 2d$ is:
+    $\myvec{2a+b & a-2b \\ 5c-d & 4c+3d} = \myvec{4 & -3 \\ 11 & 24}$, then the value of $a + b - c + 2d$ is:
     \begin{enumerate}
         \item  $8$
         \item $10$
@@ -150,7 +153,7 @@
         \item $\myvec{7 & -5 \\ 11 & 2}$
     \end{enumerate}
 
-    \item Given that $A = [a_{ij}]$ is a square matrix of order $3 \times 3$ and $|A| = -7$, then the value of  $\sum_{i=1}^{3} a_{i2}A_{i2}$ ,where $A_{ij}$ denotes the co-factor of element $a_{ij}$ is:
+    \item Given that $A = [a_{ij}]$ is a square matrix of order $3 \times 3$ and $|A| = -7$, then the value of  $\sum_{i=1}^{3} a_{i2}A_{i2}$ ,where $A_{ij}$ denotes the cofactor of element $a_{ij}$ is:
 
     \begin{enumerate}
         \item $\myvec{1 & 0 \\ 1 & 0}$
@@ -192,7 +195,7 @@
     \end{enumerate}
     
     \item For $A =
-        \myvec{3 & 1 \\ -1 & 2}$, then $14^{-1}$ is given by:
+        \myvec{3 & 1 \\ -1 & 2}$, then $14A^{-1}$ is given by:
     \begin{enumerate}
         \item $14 \myvec{2 & -1 \\ 1 & 3}$
         \item $\myvec{4 & -2 \\ 2 & 6}$
@@ -200,20 +203,19 @@
         \item $2\myvec{-3 & -1 \\ 1 & -2 }$
     \end{enumerate}
     
-    \item Given that $A = 
-        \myvec{\alpha & \beta \\ \gamma & -\alpha}$ and $A^2 = 3I$, then:
+    \item Given that $A = \myvec{\alpha & \beta \\ \gamma & -\alpha}$ and $A^2 = 3I$, then:
     \begin{enumerate}
         \item $1 + \alpha^2 + \beta\gamma = 0$
         \item $1 - \alpha^2 - \beta\gamma = 0$
         \item $3 - \alpha^2 - \beta\gamma = 0$
         \item $3 + \alpha^2 + \beta\gamma = 0$
     \end{enumerate}
-    \item Let $A = \myvec{1 & \sin\alpha & 1 \\ -\sin\alpha & 1 & \sin\alpha \\ -1 & -\sin\alpha & 1}$, where $0\leq \alpha \leq 2\pi$, then:
+    \item Let $A =\myvec{1 & \sin\alpha & 1 \\ -\sin\alpha & 1 & \sin\alpha \\ -1 & -\sin\alpha & 1}$, where $0\leq\alpha\leq2\pi$, then:
     \begin{enumerate}
-	    \item $\mydet{A}=0$
-	    \item $\mydet{A} \varepsilon (2,\infty)$
-	    \item $\mydet{A} \varepsilon (2,4)$
-	    \item $\mydet{A} \varepsilon \mydet{2,4}$
+        \item $\mydet{A} = 0$
+        \item $\mydet{A} \in (2,\infty)$
+        \item $\mydet{A} \in (2,4)$
+        \item $\mydet{A} \in \mydet{2,4}$
     \end{enumerate}
 \end{enumerate}
 \end{document}
