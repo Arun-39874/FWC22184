@@ -1,9 +1,10 @@
 \documentclass{article}
+\usepackage{gvv-book}
+\usepackage{gvv}
 \usepackage{amsmath}
 \usepackage{tfrupee}
 \usepackage{geometry}
-\providecommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
-\providecommand{\myvec}[1]{\ensuremath{\begin{bmatrix}#1\end{bmatrix}}}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm, textwidth=15cm]{geometry}
 \begin{document}
 \begin{enumerate}
     \item Find whether the following pair of linear equations are consistent or inconsistent:
@@ -24,10 +25,9 @@
     
     \item Find the value of $k$ for which the system of equations $x + 2y = 5$ and $3x + ky + 15 = 0$ has no solution.
     
-    \item If $2$ tables and $2$ chairs cost \rupee$700$ and $4$ tables and $3$ chairs cost \rupee$1,250$, then find the cost of one table.
+    \item If $2$ tables and $2$ chairs cost \rupee $700$ and $4$ tables and $3$ chairs cost \rupee $1,250$, then find the cost of one table.
     
     \item If the graph of a pair of lines $x - 2y + 3 = 0$ and $2x - 4y = 5$ be drawn, then what type of lines are drawn?
-
 
     \item If $A = \myvec{1 & -1 \\ -1 & 1}$, then $A^2$ equals
     \begin{enumerate}
@@ -78,7 +78,7 @@
     
     \item If $A = \myvec{0 & 1 \\ 1 & 0}$, then $A^4 = \rule{2cm}{0.15mm}$.
 
-    \item Given $A = \myvec{1 -1 & 1 \\ 3 & -2 & 1 \\ -2 & 1 & 0}$ and
+    \item Given $A = \myvec{1 & -1 & 1 \\ 3 & -2 & 1 \\ -2 & 1 & 0}$ and
     $B = \myvec{1 & 2 \\ 2 & 4 \\ 1 & -2}$, the order of the matrix $AB$ is $\rule{2cm}{0.15mm}$.
     
     \item if $A = \myvec{0 & -i \\ i & 0} (i^2 = -1)$ and  $B = \myvec{1 & 0 \\ 0 & -1}$, then $AB$ is equal to
@@ -108,7 +108,7 @@
 
     \item If $A = [a_{i}{j}]$ is a square matrix of order $2$ such that 
     \begin{align}
-        a_{i} = \begin{cases}1, $i + j$\\0, i-j
+        a_{i} = \begin{cases}1, & i + j\\0, & i - j
     \end{cases}
     \end{align}
      ,then $A^2$ is:
@@ -217,5 +217,6 @@
         \item $\mydet{A} \in (2,4)$
         \item $\mydet{A} \in \mydet{2,4}$
     \end{enumerate}
+
 \end{enumerate}
 \end{document}
